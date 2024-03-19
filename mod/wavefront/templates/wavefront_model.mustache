@@ -1,0 +1,79 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_wavefront/wavefront_model
+
+    Wavefront model template
+
+    Example context (json):
+    {
+    	"hascaption": true,
+    	"caption": "<p dir="ltr" style="text-align: left;">A skeleton</p>",
+    	"captiontop": true,									
+    	"pixloading": moodle_url object,				
+    	"baseurl": "https%3A%2F%2Fmoodle.localhost%2Fpluginfile.php%2F16%2Fmod_wavefront%2Fmodel%2F1%2F",
+    	"mtlfile": "https%3A%2F%2Fmoodle.localhost%2Fpluginfile.php%2F16%2Fmod_wavefront%2Fmodel%2F1%2Fskeleton.mtl",
+    	"objfile": "https%3A%2F%2Fmoodle.localhost%2Fpluginfile.php%2F16%2Fmod_wavefront%2Fmodel%2F1%2Fskeleton.obj",
+    	"stagename": "wavefront_6252f4a09d0b9",
+    	"stagewidth": "400",
+    	"stageheight": "400",
+    	"backcol": "000000",
+    	"cameraangle": "45",
+    	"camereanear": "1",
+    	"camerafar": "1000",
+    	"camerax": "0",
+    	"cameray": "1",
+    	"cameraz": "200",
+    	"controlx": "0",
+    	"controly": "2",
+    	"controlz": "0",
+    }
+}}
+
+<div class="wavefront-model-container">
+	<div class="wavefront-model-wrapper">
+    	<div class="wavefront-model-frame">
+            {{#hascaption}}
+            	{{#captiontop}}
+            	<div class="wavefront-model-caption top">{{{caption}}}</div>
+            	{{/captiontop}}
+            {{/hascaption}}
+        	<div data-baseurl={{baseurl}} data-mtl={{mtlfile}} data-obj={{objfile}} id="{{stagename}}"
+             	 data-stagewidth={{stagewidth}} data-stageheight={{stageheight}} data-backcol={{backcol}} data-cameraangle={{cameraangle}}
+            	 data-cameranear={{cameranear}} data-camerafar={{camerafar}} data-camerax={{camerax}} data-cameray={{cameray}} data-cameraz={{cameraz}}
+            	 data-controlx={{controlx}} data-controly={{controly}} data-controlz={{controlz}}>
+            </div>
+            
+            <img class"model-loading" src="{{pixloading}}" />
+             
+            {{#hascaption}}
+            	{{^captiontop}}
+            	<div class="wavefront-model-caption bottom">{{{caption}}}</div>
+            	{{/captiontop}}
+            {{/hascaption}}
+        	
+        </div>
+    </div>
+ </div>
+ 
+{{#js}}
+    require(['mod_wavefront/wavefront_renderer'],
+        function(wavefront_renderer) {
+            wavefront_renderer.init('{{stagename}}');
+        }
+    );
+{{/js}}

@@ -1,0 +1,91 @@
+.wavefront-gallery {
+    display:flex;
+}
+
+.dir-rtl .wavefront .collada-model-container,
+.dir-rtl .wavefront .wavefront-model-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+.wavefront .collada-model-frame,
+.wavefront .wavefront-model-frame {
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 150ms, border-color 150ms, background-color 150ms, color 150ms;
+    -webkit-transition: box-shadow 150ms, border-color 150ms, background-color 150ms, color 150ms;
+    color: #696969;
+}
+
+.wavefront .collada-model-container .collada-model-frame:hover,
+.wavefront .wavefront-model-container .wavefront-model-frame:hover {
+    transition: box-shadow 150ms, border-color 150ms;
+    text-decoration: none;
+    box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 15px #ccc;
+    border-color: #999;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.wavefront .collada-model-container .collada-model-frame:active,
+.wavefront .wavefront-model-container .wavefront-model-frame:active {
+    box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;
+}
+
+.wavefront .collada-model-caption,
+.wavefront .wavefront-model-caption {
+    font-family: 'Verdana', 'Lucida Grande', 'sans-serif';
+    font-size: 11px;
+    margin-bottom: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.wavefront .collada-model-caption.top,
+.wavefront .wavefront-model-caption.top {
+    margin-bottom: -3px;
+}
+
+#mod-wavefront-view .generalbox {
+    overflow: auto;
+}
+
+.wavefront img.model-loading {
+    padding: 10px;
+}
+
+.wavefront div.model-management {
+    display: flex;
+}
+
+.wavefront div.ar input[type=submit],
+.wavefront div.model-management input[type=submit] {
+    margin-left: 10px;
+}
+
+.wavefront div.embed-shortcode {
+    margin: 10px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+body#page-mod-wavefront-ar,
+body#page-mod-wavefront-ar div#page,
+body#page-mod-wavefront-ar div#page div.ar-stage {
+    margin: 0;
+    background: #000;
+}
+
+@media (max-width: 767px) {
+    .wavefront-gallery.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

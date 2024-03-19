@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<libraries>
+  <library>
+    <location>amd/src/three.js</location>
+    <name>Three.js JavaScript 3D library</name>
+    <license>MIT</license>
+    <version>r137</version>
+  </library>
+</libraries>
