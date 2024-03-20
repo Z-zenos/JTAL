@@ -1,198 +1,372 @@
 #page-footer {
-    margin: 0 -15px;
-    background-color: #ff1768;
-    color: #fff;
+	margin: 0 -15px;
+	background-color: #ff1768;
+	color: #fff;
 
-    a:not(.btn) {
-        color: #fff;
-    }
+	a:not(.btn) {
+		color: #fff;
+	}
 
-    .contactsitesupport {
-        border: 1px solid #fff;
-        color: #fff;
-    }
+	.contactsitesupport {
+		border: 1px solid #fff;
+		color: #fff;
+	}
 
-    .popover.footer .popover-body .footer-section {
-        color: #1d2125;
+	.popover.footer .popover-body .footer-section {
+		color: #1d2125;
 
-        a {
-            color: #1d2125;
-        }
-    }
+		a {
+			color: #1d2125;
+		}
+	}
 
-    .footer-columns {
-        padding: 15px;
-    }
+	.footer-content-popover {
+		width: 420px;
+		max-width: 500px;
+		left: -100px;
+	}
 
-    .logo {
-        max-width: 50%;
-    }
+	.footer-columns {
+		padding: 15px;
+	}
 
-    h3.footer-title {
-        font-size: $h6-font-size;
-        line-height: 1.2;
-        font-weight: 500;
-    }
+	.logo {
+		max-width: 50%;
+	}
 
-    .socialnetworks,
-    .contact {
-        margin-top: .5rem;
+	h3.footer-title {
+		font-size: $h6-font-size;
+		line-height: 1.2;
+		font-weight: 500;
+	}
 
-        ul {
-            padding-left: 0;
+	.socialnetworks,
+	.contact {
+		margin-top: 0.5rem;
 
-            li {
-                display: inline;
+		ul {
+			padding-left: 0;
 
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                    width: 38px;
-                    height: 38px;
+			li {
+				display: inline;
 
-                    &.btn-rounded {
-                        border-radius: 50%;
-                    }
+				a {
+					text-decoration: none;
+					color: #fff;
+					width: 38px;
+					height: 38px;
 
-                    &.website {
-                        background-color: $brand-primary;
-                        &:hover {
-                            background-color: darken($brand-primary, 20%);
-                        }
-                    }
+					&.btn-rounded {
+						border-radius: 50%;
+					}
 
-                    &.mobile {
-                        background-color: $brand-primary;
-                        &:hover {
-                            background-color: darken($brand-primary, 20%);
-                        }
-                    }
+					&.website {
+						background-color: $brand-primary;
+						&:hover {
+							background-color: darken($brand-primary, 20%);
+						}
+					}
 
-                    &.mail {
-                        background-color: $brand-primary;
-                        &:hover {
-                            background-color: darken($brand-primary, 20%);
-                        }
-                    }
+					&.mobile {
+						background-color: $brand-primary;
+						&:hover {
+							background-color: darken($brand-primary, 20%);
+						}
+					}
 
-                    &.facebook {
-                        background-color: $facebook-color;
-                        &:hover {
-                            background-color: darken($facebook-color, 20%);
-                        }
-                    }
+					&.mail {
+						background-color: $brand-primary;
+						&:hover {
+							background-color: darken($brand-primary, 20%);
+						}
+					}
 
-                    &.twitter {
-                        background-color: $twitter-color;
-                        &:hover {
-                            background-color: darken($twitter-color, 20%);
-                        }
-                    }
+					&.facebook {
+						background-color: $facebook-color;
+						&:hover {
+							background-color: darken($facebook-color, 20%);
+						}
+					}
 
-                    &.linkedin {
-                        background-color: $linkedin-color;
-                        &:hover {
-                            background-color: darken($linkedin-color, 20%);
-                        }
-                    }
+					&.twitter {
+						background-color: $twitter-color;
+						&:hover {
+							background-color: darken($twitter-color, 20%);
+						}
+					}
 
-                    &.youtube {
-                        background-color: $youtube-color;
-                        &:hover {
-                            background-color: darken($youtube-color, 20%);
-                        }
-                    }
+					&.linkedin {
+						background-color: $linkedin-color;
+						&:hover {
+							background-color: darken($linkedin-color, 20%);
+						}
+					}
 
-                    &.instagram {
-                        background-color: $instagram-color;
-                        &:hover {
-                            background-color: darken($instagram-color, 20%);
-                        }
-                    }
+					&.youtube {
+						background-color: $youtube-color;
+						&:hover {
+							background-color: darken($youtube-color, 20%);
+						}
+					}
 
-                    &.whatsapp {
-                        background-color: $whatsapp-color;
-                        &:hover {
-                            background-color: darken($whatsapp-color, 20%);
-                        }
-                    }
+					&.instagram {
+						background-color: $instagram-color;
+						&:hover {
+							background-color: darken($instagram-color, 20%);
+						}
+					}
 
-                    &.telegram {
-                        background-color: $telegram-color;
+					&.whatsapp {
+						background-color: $whatsapp-color;
+						&:hover {
+							background-color: darken($whatsapp-color, 20%);
+						}
+					}
 
-                        &:hover {
-                            background-color: darken($telegram-color, 20%);
-                        }
+					&.telegram {
+						background-color: $telegram-color;
 
-                        .fa {
-                            margin-left: -1px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+						&:hover {
+							background-color: darken($telegram-color, 20%);
+						}
 
-    .supportemail,
-    .logininfo,
-    .tool_dataprivacy{
-        margin: .5rem 0;
-    }
+						.fa {
+							margin-left: -1px;
+						}
+					}
+				}
+			}
+		}
+	}
 
-    .column-center {
-        text-align: center;
-    }
+	.supportemail,
+	.logininfo,
+	.tool_dataprivacy {
+		margin: 0.5rem 0;
+	}
 
-    .column-right {
-        text-align: right;
+	.column-center {
+		text-align: center;
+	}
 
-        .stores {
-            a {
-                display: block;
-            }
+	.column-right {
+		text-align: right;
 
-            img {
-                max-width: 160px;
-            }
-        }
-    }
+		.stores {
+			a {
+				display: block;
+			}
 
-    .copyright {
-        background-color: $moodle-color;
-        text-align: center;
-        min-height: inherit;
-        color: #fff;
-        margin-bottom: 0;
+			img {
+				max-width: 160px;
+			}
+		}
+	}
 
-        .madeby {
-            padding: .5rem 0;
+	.copyright {
+		background-color: $moodle-color;
+		text-align: center;
+		min-height: inherit;
+		color: #fff;
+		margin-bottom: 0;
 
-            p {
-                margin-bottom: 0;
-            }
-        }
-    }
+		.madeby {
+			padding: 0.5rem 0;
 
-    .btn-footer-popover {
-        bottom: 1rem;
-    }
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
 
-    .btn-footer-dictionary {
-        right: 5rem;
-    }
+	.btn-footer-popover {
+		bottom: 1rem;
+	}
+
+	.btn-footer-dictionary {
+		right: 5rem;
+	}
+
+	.wrapper {
+		width: 420px;
+		border-radius: 7px;
+		background: #fff;
+		padding: 25px 28px 45px;
+		box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+
+		header {
+			font-size: 28px;
+			font-weight: 500;
+			text-align: center;
+		}
+
+		.search {
+			position: relative;
+			margin: 35px 0 18px;
+
+			input {
+				height: 53px;
+				width: 100%;
+				outline: none;
+				font-size: 16px;
+				border-radius: 5px;
+				padding: 0 42px;
+				border: 1px solid #999;
+
+				&:focus {
+					padding: 0 41px;
+					border: 2px solid #4d59fb;
+				}
+
+				&::placeholder {
+					color: #b8b8b8;
+				}
+
+				&:focus ~ i {
+					color: #4d59fb;
+				}
+
+				&:valid ~ span {
+					display: block;
+				}
+			}
+
+			&:where(i, span) {
+				position: absolute;
+				top: 50%;
+				color: #999;
+				transform: translateY(-50%);
+			}
+
+			i {
+				left: 18px;
+				pointer-events: none;
+				font-size: 16px;
+			}
+
+			span {
+				right: 15px;
+				cursor: pointer;
+				font-size: 18px;
+				display: none;
+			}
+		}
+
+		.info-text {
+			font-size: 13px;
+			color: #9a9a9a;
+			margin: -3px 0 -10px;
+
+			span {
+				font-weight: 500;
+			}
+		}
+
+		&.active {
+			.info-text {
+				display: none;
+			}
+
+			ul {
+				opacity: 1;
+				height: 303px;
+			}
+		}
+
+		ul {
+			height: 0;
+			opacity: 0;
+			padding-right: 1px;
+			overflow-y: hidden;
+			transition: all 0.2s ease;
+
+			li {
+				display: flex;
+				list-style: none;
+				margin-bottom: 14px;
+				align-items: center;
+				padding-bottom: 17px;
+				border-bottom: 1px solid #d9d9d9;
+				justify-content: space-between;
+
+				&:last-child {
+					margin-bottom: 0;
+					border-bottom: 0;
+					padding-bottom: 0;
+				}
+			}
+
+			.word {
+				p {
+					font-size: 22px;
+					font-weight: 500;
+				}
+
+				span {
+					font-size: 12px;
+					color: #989898;
+				}
+
+				i {
+					color: #999;
+					font-size: 15px;
+					cursor: pointer;
+				}
+			}
+
+			.content {
+				max-height: 215px;
+				overflow-y: auto;
+
+				&::-webkit-scrollbar {
+					width: 0px;
+				}
+
+				li {
+					.details {
+						padding-left: 10px;
+						border-radius: 4px 0 0 4px;
+						border-left: 3px solid #4d59fb;
+					}
+
+					p {
+						font-size: 17px;
+						font-weight: 500;
+					}
+
+					span {
+						font-size: 15px;
+						color: #7e7e7e;
+					}
+				}
+
+				.synonyms {
+					.list {
+						display: flex;
+						flex-wrap: wrap;
+					}
+
+					span {
+						cursor: pointer;
+						margin-right: 5px;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
 }
 
 @include media-breakpoint-down(sm) {
-    #page-footer {
-        .column-right,
-        .column-left {
-            text-align: center;
-        }
+	#page-footer {
+		.column-right,
+		.column-left {
+			text-align: center;
+		}
 
-        .column-center,
-        .column-right {
-            margin-top: 1rem;
-        }
-    }
+		.column-center,
+		.column-right {
+			margin-top: 1rem;
+		}
+	}
 }
-

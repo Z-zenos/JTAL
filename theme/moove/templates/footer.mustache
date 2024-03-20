@@ -95,32 +95,54 @@
 
     <div data-region="footer-container-popover">
         <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="{{#str}}showfooter, theme_boost{{/str}}">
-            {{#pix}}e/question, core{{/pix}}
-        </button>
-        <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover btn-footer-dictionary" data-action="footer-popover" aria-label="{{#str}}showfooter, theme_boost{{/str}}">
             {{#pix}}book, core{{/pix}}
         </button>
     </div>
     <div class="footer-content-popover container" data-region="footer-content-popover">
         {{# output.has_popover_links }}
             <div class="footer-section p-3 border-bottom">
-                {{# output.page_doc_link }}
-                    <div>{{{ output.page_doc_link }}}</div>
-                {{/ output.page_doc_link }}
+                <div class="wrapper">
+                <header>English Dictionary</header>
+                    <div class="search">
+                        <input type="text" placeholder="Search a word" required spellcheck="false">
+                        {{#pix}}a/search, core{{/pix}}
 
-                {{# output.services_support_link }}
-                    <div>{{{ output.services_support_link }}}</div>
-                {{/ output.services_support_link }}
+                        {{#pix}}i/window_close, core{{/pix}}
+                    </div>
+                    <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+                    <ul>
+                        <li class="word">
+                            <div class="details">
+                                <p>__</p>
+                                <span>_ _</span>
+                            </div>
+                            {{#pix}}a/search, core{{/pix}}
+                        </li>
+                        <div class="content">
+                        <li class="meaning">
+                            <div class="details">
+                                <p>Meaning</p>
+                                <span>___</span>
+                            </div>
+                        </li>
+                        <li class="example">
+                            <div class="details">
+                                <p>Example</p>
+                                <span>___</span>
+                            </div>
+                        </li>
+                        <li class="synonyms">
+                            <div class="details">
+                                <p>Synonyms</p>
+                                <div class="list"></div>
+                            </div>
+                        </li>
+                        </div>
+                    </ul>
+                </div>
             </div>
         {{/ output.has_popover_links }}
-        <div class="footer-section p-3">
-            <div>{{#str}}poweredbymoodle, core{{/str}}</div>
-            {{#output.moodle_release}}
-                <div>
-                    {{#str}}version, core{{/str}} {{{ output.moodle_release }}}
-                </div>
-            {{/output.moodle_release}}
-        </div>
+        
     </div>
 </footer>
 
