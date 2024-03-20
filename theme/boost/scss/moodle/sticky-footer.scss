@@ -12,6 +12,7 @@ body {
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         #page {
             &:not(.drawers) {
                 flex: 1 0 auto;

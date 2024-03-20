@@ -64,67 +64,7 @@
                     </ul>
                 </div>
 
-                <div class="socialnetworks">
-                    <h3 class="footer-title">{{#str}}followus, theme_moove{{/str}}</h3>
 
-                    <ul class="mb-0">
-                        {{#facebook}}
-                            <li>
-                                <a href="{{{facebook}}}" target="_blank" class="facebook btn btn-link btn-rounded">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                        {{/facebook}}
-
-                        {{#twitter}}
-                            <li>
-                                <a href="{{{twitter}}}" target="_blank" class="twitter btn btn-link btn-rounded">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                        {{/twitter}}
-
-                        {{#linkedin}}
-                            <li>
-                                <a href="{{{linkedin}}}" target="_blank" class="linkedin btn btn-link btn-rounded">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                        {{/linkedin}}
-
-                        {{#youtube}}
-                            <li>
-                                <a href="{{{youtube}}}" target="_blank" class="youtube btn btn-link btn-rounded">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
-                            </li>
-                        {{/youtube}}
-
-                        {{#instagram}}
-                            <li>
-                                <a href="{{{instagram}}}" target="_blank" class="instagram btn btn-link btn-rounded">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                        {{/instagram}}
-
-                        {{#whatsapp}}
-                            <li>
-                                <a href="https://api.whatsapp.com/send?phone={{{whatsapp}}}" target="_blank" class="whatsapp btn btn-link btn-rounded">
-                                    <i class="fa fa-whatsapp"></i>
-                                </a>
-                            </li>
-                        {{/whatsapp}}
-
-                        {{#telegram}}
-                            <li>
-                                <a href="{{{telegram}}}" target="_blank" class="telegram btn btn-link btn-rounded">
-                                    <i class="fa fa-telegram"></i>
-                                </a>
-                            </li>
-                        {{/telegram}}
-                    </ul>
-                </div>
             </div>
             <div class="col-md-4 column-center">
                 {{# output.supportemail }}
@@ -133,18 +73,9 @@
 
                 {{{ output.login_info }}}
 
-                {{{ output.standard_footer_html }}}
-
-                <div class="tool_usertours-resettourcontainer"></div>
             </div>
             <div class="col-md-4 column-right">
                 {{#enablemobilewebservice}}
-                    {{#mobilesetuplink}}
-                        <a href="{{{mobilesetuplink}}}">{{#str}}getmoodleonyourmobile, tool_mobile{{/str}}</a>
-                    {{/mobilesetuplink}}
-                    {{^mobilesetuplink}}
-                        <h3 class="footer-title">{{#str}}getmoodleonyourmobile, tool_mobile{{/str}}</h3>
-                    {{/mobilesetuplink}}
                     <div class="stores">
                         {{#androidappid}}
                             <a href="https://play.google.com/store/apps/details?id={{androidappid}}">
@@ -162,16 +93,7 @@
         </div>
     </div>
 
-    <div class="footer-content-debugging footer-dark bg-dark text-light">
-        <div class="moove-container-fluid footer-dark-inner">
-            {{{ output.debug_footer_html }}}
-        </div>
-    </div>
-
     <div data-region="footer-container-popover">
-        <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="{{#str}}showfooter, theme_boost{{/str}}">
-            {{#pix}}e/question, core{{/pix}}
-        </button>
         <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="{{#str}}showfooter, theme_boost{{/str}}">
             {{#pix}}e/question, core{{/pix}}
         </button>
@@ -195,15 +117,6 @@
                     {{#str}}version, core{{/str}} {{{ output.moodle_release }}}
                 </div>
             {{/output.moodle_release}}
-        </div>
-    </div>
-
-    <div class="copyright">
-        <div class="madeby">
-            <p>{{#str}}themedevelopedby, theme_moove{{/str}}</p>
-            <a href="https://conecti.me">
-                <img src="{{config.wwwroot}}/theme/moove/pix/logo_conectime.svg" alt="Conecti.me" style="height: 40px;">
-            </a>
         </div>
     </div>
 </footer>
