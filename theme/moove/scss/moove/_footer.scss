@@ -176,6 +176,10 @@
     .btn-footer-popover {
         bottom: 1rem;
     }
+
+    .btn-footer-dictionary {
+        right: 5rem;
+    }
 }
 
 @include media-breakpoint-down(sm) {
